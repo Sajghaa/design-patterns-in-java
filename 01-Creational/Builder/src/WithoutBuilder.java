@@ -34,15 +34,29 @@ public class WithoutBuilder {
     public String getPhone() { return phone; }
     public String getAddress() { return address; }
     
+
+
     @Override
     public String toString(){
-        return "WithoutBuilder{" +
-                "name='" + name +'\''+
-                ", age=" + age +
-                ", phone='" + phone + '\'' +
-                ", address='" + address +'\'' +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("WithoutBuilder {\n");
+        sb.append("name= ").append(name).append("\n");
+        sb.append("age= ").append(age).append("\n");
+        sb.append("phone= ").append(phone).append("\n");
+        sb.append("address= ").append(address).append("\n");
+        sb.append("}");
+
+        return sb.toString();
     }
+    // @Override
+    // public String toString(){
+    //     return "WithoutBuilder{" +
+    //             "name='" + name +'\''+
+    //             ", age=" + age +
+    //             ", phone='" + phone + '\'' +
+    //             ", address='" + address +'\'' +
+    //             '}';
+    // }
 
     // Testing the Naive way
     public static void main(String[]args){
