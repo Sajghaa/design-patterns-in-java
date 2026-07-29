@@ -1,0 +1,120 @@
+# ============================
+# Compiled Java bytecode
+# ============================
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.jmod
+
+# ============================
+# Package / build output directories
+# ============================
+/target/
+/build/
+/bin/
+/out/
+/dist/
+/gradle-build/
+/buildSrc/build/
+
+# ============================
+# Maven
+# ============================
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+.mvn/
+mvnw
+mvnw.cmd
+
+# ============================
+# Gradle
+# ============================
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+
+# ============================
+# IntelliJ IDEA
+# ============================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.idea_modules/
+atlassian-ide-plugin.xml
+.ignore
+
+# ============================
+# Eclipse
+# ============================
+.classpath
+.project
+.settings/
+.metadata/
+*.prefs
+*.tmp
+*.log
+.tern-project
+.factorypath
+
+# ============================
+# VS Code
+# ============================
+.vscode/
+*.code-workspace
+
+# ============================
+# NetBeans
+# ============================
+nbproject/
+nb-configuration.xml
+*.nbattrs
+
+# ============================
+# OS generated files
+# ============================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ============================
+# Logs & temporary files
+# ============================
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+*.lock
+
+# ============================
+# Dumping ground (for local experiments)
+# ============================
+/dump/
+/temp/
+/scratch/
+
+# ============================
+# Optional: If you add any secrets later
+# ============================
+*.properties
+*.secret
+*.key
+.env
+application-local.yml
+application-local.properties
