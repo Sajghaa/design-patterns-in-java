@@ -21,6 +21,7 @@ User user = new User(
     "java",
     "Django"
 )
+```
 
 1. **Readability Nightmare**: When you see `new User("Serge", "Rwanda", "Software Engineer",true, "java", "Django")`, you have no idea what `true` or `"Django"` refers to without checking the constructor signature.
 
@@ -48,7 +49,6 @@ we use a static nested `Builder` class. It uses **method chaining** to set param
 
 `StringBuilder.append()`, `Stream.Builder`, and complex DTOs(Data Transfer Objects) in enterprise applications.
 
----
 
 ### Exercises
 
