@@ -38,3 +38,17 @@ We provide **three** robust implementations, each with its own trade-offs:
 | Eager    | ✅          | ❌   | ❌              | ❌ (needs `readResolve`) |
 | Lazy (DCL) | ✅       | ✅   | ❌              | ❌ (needs `readResolve`) |
 | Enum     | ✅          | ✅   | ✅              | ✅                  |
+
+
+## Real-World use
+`java.lang.Runtime.getRuntime()`, Spring Framework's been scope `singleton`, Loggers.
+
+---
+
+## Exam/Interview Tip
+If the exam/interview asks *"Which Singleton implementation is best?"* - the safest answer is **Enum Singleton** because it covers all tack vectors. However, if they ask for *"Lazy loading with thread-safety"*, give them **Double-Checked Locking**
+
+---
+
+### Exercises
+Check `Exercises`/ for exam/interview-style challenges.
