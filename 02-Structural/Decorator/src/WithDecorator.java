@@ -1,6 +1,3 @@
-package decorator.src;
-
-
 public class WithDecorator {
 
 
