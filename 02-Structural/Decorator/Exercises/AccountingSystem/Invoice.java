@@ -1,5 +1,5 @@
 package Decorator.Exercises.AccountingSystem;
 
-public class Invoice {
-    
+public interface Invoice{
+    double getAmount();
 }
