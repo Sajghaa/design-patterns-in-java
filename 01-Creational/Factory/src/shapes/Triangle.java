@@ -11,6 +11,11 @@ public class Triangle implements Shape{
     }
 
     @Override
+    public void draw(){
+        System.out.println("Drawing Triangle (b="+ base + ", h="+ height + ")");
+    }
+
+    @Override
     public double area(){
         return 0.5 * base * height;
     }
