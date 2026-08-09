@@ -10,7 +10,7 @@ public class Square implements Shape {
 
     @Override
     public void draw(){
-        System.out.println("Drawing a Square with side " + side);
+        System.out.println("Drawing a Square  (" + side + ")");
     }
 
     @Override
