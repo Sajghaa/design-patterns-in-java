@@ -1,5 +1,6 @@
 package pattern.payment;
 
-public class PaymentStrategy {
+public interface PaymentStrategy {
+    void pay(double amount);
     
-}
+} 
