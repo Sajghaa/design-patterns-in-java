@@ -1,5 +1,6 @@
 package pattern.travel;
 
-public class FareStrategy {
+public interface FareStrategy {
     
+    double calculateFare();
 }
