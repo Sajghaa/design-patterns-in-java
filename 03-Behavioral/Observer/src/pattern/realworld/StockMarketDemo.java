@@ -1,4 +1,4 @@
-package naive.pattern.realworld;
+package pattern.realworld;
 
 public class StockMarketDemo {
     

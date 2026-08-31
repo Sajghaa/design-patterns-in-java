@@ -1,4 +1,4 @@
-package naive.pattern.classic;
+package pattern.classic;
 
 public class Subject {
     

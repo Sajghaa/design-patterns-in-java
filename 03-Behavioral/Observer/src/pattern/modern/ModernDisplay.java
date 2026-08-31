@@ -1,4 +1,4 @@
-package naive.pattern.modern;
+package pattern.modern;
 
 public class ModernDisplay {
     
