@@ -1,5 +1,6 @@
 package pattern.classic;
 
-public class Observer {
-    
-}
+public interface Observer {
+
+   void update(); 
+} 
