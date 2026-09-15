@@ -1,11 +1,8 @@
-package factory.src;
-
-import factory.src.shapes.*;
+import shapes.*;
 
 
 public class WithoutFactory {
 
-    // This method is the problem - it knows about EVERY concrete class
     public static Shape createShape(String type, double... params) {
         if (type == null) {
             throw new IllegalArgumentException("Type cannot be null");
@@ -26,7 +23,7 @@ public class WithoutFactory {
     }
 
     public static void main(String[] args) {
-        // This client code is tightly coupled to the 'createShape' method
+  
         Shape circle = WithoutFactory.createShape("circle", 5.0);
         Shape square = WithoutFactory.createShape("square", 4.0);
         Shape triangle = WithoutFactory.createShape("triangle", 3.0, 6.0);
