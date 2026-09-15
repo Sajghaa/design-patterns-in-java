@@ -1,6 +1,6 @@
-import  shapes.*;
+import shapes.*;
 
-public class WithoutFactory {
+public class WithFactory {
 
     public static Shape createShape(String type, double... params) {
         if (type == null) {
@@ -23,9 +23,9 @@ public class WithoutFactory {
 
     public static void main(String[] args) {
         // This client code is tightly coupled to the 'createShape' method
-        Shape circle = WithoutFactory.createShape("circle", 5.0);
-        Shape square = WithoutFactory.createShape("square", 4.0);
-        Shape triangle = WithoutFactory.createShape("triangle", 3.0, 6.0);
+        Shape circle = WithFactory.createShape("circle", 5.0);
+        Shape square = WithFactory.createShape("square", 4.0);
+        Shape triangle = WithFactory.createShape("triangle", 3.0, 6.0);
 
         circle.draw();
         square.draw();
