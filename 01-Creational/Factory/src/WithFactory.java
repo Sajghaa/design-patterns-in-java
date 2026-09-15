@@ -1,13 +1,12 @@
-import factory.src.shapes.*;
+import  shapes.*;
+
 public class WithoutFactory {
 
-    // This method is the problem - it knows about EVERY concrete class
     public static Shape createShape(String type, double... params) {
         if (type == null) {
             throw new IllegalArgumentException("Type cannot be null");
         }
 
-        // THE NAIVETY: Every time we add a shape, we add an 'else if'
         if (type.equalsIgnoreCase("circle")) {
             if (params.length < 1) throw new IllegalArgumentException("Circle needs radius");
             return new Circle(params[0]);
@@ -36,9 +35,5 @@ public class WithoutFactory {
         System.out.println("Square area: " + square.area());
         System.out.println("Triangle area: " + triangle.area());
 
-        // ========== THE KICKER ==========
-        // To add a Pentagon, we MUST edit this class and add a new 'else if'.
-        // This is what the Open/Closed Principle forbids!
-        // The Factory pattern fixes this.
     }
 }
